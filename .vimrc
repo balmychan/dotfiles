@@ -1,5 +1,7 @@
 syntax on
 set number
+set clipboard=unnamed,autoselect
+
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 nnoremap <silent><C-n> gt<CR>
 nnoremap <silent><C-p> gT<CR>
