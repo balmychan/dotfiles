@@ -1,3 +1,5 @@
+# Install
+
 ```
-curl https://github.com/balmychan/dotfiles/install.sh | bash
+curl -L raw.github.com/balmychan/dotfiles/master/install.sh | bash
 ```
