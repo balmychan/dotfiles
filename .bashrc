@@ -1,13 +1,13 @@
-if [ "$(uname)" == 'Darwin' ]; then
-  OS='Mac'
-elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
-  OS='Linux'
-elif [ "$(expr substr $(uname -s) 1 10)" == 'MINGW32_NT' ]; then                                                                                           
-  OS='Cygwin'
-fi
+#if [ "$(uname)" == 'Darwin' ]; then
+#  OS='Mac'
+#elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
+#  OS='Linux'
+#elif [ "$(expr substr $(uname -s) 1 10)" == 'MINGW32_NT' ]; then                                                                                           
+#  OS='Cygwin'
+#fi
 
 # For cygwin settings
-if [ OS == 'Cygwin' ]; then
+if [ $OS == 'Windows_NT' ]; then
   export PATH=$PATH:/cygdrive/c/Windows/System32/inetsrv
   # rbenv
   export PATH="$HOME/.rbenv/bin:$PATH"
