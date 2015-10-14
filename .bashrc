@@ -5,6 +5,12 @@
 #elif [ "$(expr substr $(uname -s) 1 10)" == 'MINGW32_NT' ]; then                                                                                           
 #  OS='Cygwin'
 #fi
+#set -o vi
+
+# For docker
+export DOCKER_CERT_PATH=/Users/balmychan/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376
 
 # For cygwin settings
 if [ $OS == 'Windows_NT' ]; then
